@@ -23,6 +23,12 @@
     border-radius:50%;
     filter: blur(10px);
 }
+@media (max-width:720px)
+{
+    .stove_part .container:after{
+        width:400px;
+    }
+}
 .stove_part .container img{
     width:450px;
     height: auto;
