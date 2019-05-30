@@ -1,0 +1,198 @@
+
+.stove_part{
+    height:70vh;
+    position: relative;
+    margin-bottom: 10vh;
+}
+.stove_part .container{
+    position: absolute;
+    text-align: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.stove_part .container:after{
+    content: '';
+    width:35%;
+    height:5px;
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    top:110%;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius:50%;
+    filter: blur(10px);
+}
+.stove_part .container img{
+    width:450px;
+    height: auto;
+}
+
+/* box_part */
+
+.box_part{
+    height:100vh;
+    border-radius:none;
+}
+.box_part .container{
+    background:#b85858;
+    height: 80%;
+    padding:100px;
+    border-radius:10px;
+    text-align: center;
+}
+.box_part .container .box_part_text{
+    width:70%;
+    margin:auto;
+}
+@media(max-width:726px)
+{  
+    .box_part .container{
+        padding:20px;
+        border-radius:none;
+    }
+    .box_part .container .box_part_text{
+    width:100%;
+    }
+}
+.box_part .container .box_part_text h1{
+    color:white;
+}
+.box_part .container .box_part_text p{
+    color:white;
+}
+.box_part .container .box_part_text .numbers{
+    margin-top:55px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+}
+.box_part .container .box_part_text .numbers li{
+    display:inline-block;
+    display: flex;
+    justify-content: center;
+}
+.box_part .container .box_part_text .numbers li a{
+    display:block;
+    color:white;
+    font-weight: bold;
+    background:rgba(0,0,0,.15);
+    font-size:20px;
+    width:70px;
+    height:70px;
+    line-height:70px;
+    border-radius: 50%;
+    transition: .25s all ease-in;
+}
+@media (max-width:726px)
+{
+    .box_part .container .box_part_text .numbers li a{
+        width:50px;
+        height:50px;
+        line-height: 50px;
+
+    }
+    .box_part .container{
+        border-radius: 0 !important;
+    }
+}
+.box_part .container .box_part_text .numbers li a:hover{
+    background:rgba(256,256,256,1);
+    box-shadow: 0 0.5rem 1rem rgba(256,256,256,.25);
+    color:#202020 !important;
+}
+
+.box_part .container .box_part_text i{
+    margin:25px;
+    color:white;
+    font-size:50px;
+    text-shadow:0 0 5px rgba(256,256,256,.55);
+}
+
+/* Services part */
+.services_part .container-fluid{
+    position: relative;
+    margin-left:3rem;
+}
+.services_part .container-fluid i{
+    font-size:100px;
+    z-index:-3;
+    position: absolute;
+    color:#bb5656;
+    opacity: .15;
+    top: 0;left: 2%;
+}
+
+/* Inquire part */
+.inquire_part{
+    margin:50px 0;
+}
+.inquire_part .container{
+    min-height: 35vh;
+    background:#bb5656;
+    border-radius: 10px;
+    text-align: center;
+    padding-top:45px;
+}
+.inquire_part .container h2{
+    font-weight: 300;
+    color:white;
+}
+.inquire_part .container span{
+    font-weight: 500;
+}
+.c_button{
+    display:inline-block;
+    margin-top:1.5rem;
+    background:white;
+    padding:10px 45px;
+    color:#bb5656;
+    font-weight: 500;
+    box-shadow:0 .5rem 1rem #bb5656;
+    border-radius:3px;
+}
+.c_button:hover{
+    box-shadow:0 .5 1.5rem #bb5656;
+}
+@media (max-width:726px)
+{
+    .inquire_part .container{
+        border-radius: 0 !important;
+    }
+}
+/* Caurosel item */
+.carousel_part{
+    margin:30px 0;
+}
+.carousel_item{
+    padding:45px 30px;
+    margin:30px;
+    box-shadow: 0 0.5rem 1rem rgba(150, 147, 147, 0.20);
+}
+.owl-nav{
+    margin-left:2rem;
+}
+.owl-prev span,.owl-next span {
+    text-align: center;
+    display:inline-block;
+    font-size:2.5rem;
+    width:3rem;
+    height:3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    color:white;
+    background:#bb5656;
+    margin:0 10px;
+    box-shadow: 0 .25rem 1rem #bb5656;
+    transition:.15s all;
+}
+.owl-next span:hover{
+   color:#bb5656;
+   background:#fff;
+   box-shadow: 0 .5rem .7rem rgba(0, 0, 0, 0.15);
+}
+.owl-prev span:hover{
+   color:#bb5656;
+   background:#fff;
+   box-shadow: 0 .5rem .7rem rgba(0, 0, 0, 0.15);
+}
