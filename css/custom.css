@@ -1,4 +1,6 @@
-
+.mtb{
+    margin:1.8rem 0;
+}
 .stove_part{
     height:70vh;
     position: relative;
@@ -189,7 +191,7 @@
     color:white;
     background:#bb5656;
     margin:0 10px;
-    box-shadow: 0 .25rem 1rem #bb5656;
+    box-shadow: 0 .25rem 1rem #bb56568a;
     transition:.15s all;
 }
 .owl-next span:hover{
