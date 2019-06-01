@@ -3135,16 +3135,18 @@ ul {
 
 /* line 19, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_cta_part.scss */
 .cta_part .cta_part_iner .cta_part_text p {
-  color: #bb5656;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+  color: #646464;
+  font-size:18px;
+  width:50%;
+  margin:0 auto;
   font-weight: 500;
 }
 
 /* line 25, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_cta_part.scss */
 .cta_part .cta_part_iner .cta_part_text h1 {
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 500;
+  height:64px;
 }
 
 @media (max-width: 576px) {
@@ -4017,23 +4019,29 @@ ul {
 
 /**************** service_part css start ****************/
 /* line 4, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_service.scss */
-.service_part .single_service_part_iner {
+
+.service_part .single_service_part .single_service_part_iner {
   background-color: #fff;
   color:#202020;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.10);
-  padding: 25px 30px;
+  margin:15px;
+  box-shadow: -1px 13px 20px #f0f2f4 !important;
+  padding: 20px 30px;
   text-align: left;
   border-radius: 5px;
   -webkit-transition: .45s;
-  margin-bottom:20px;
+  width:270px;
+  height:272px;
   transition: .45s ease-in;
+}
+.single_service_part_iner svg{
+  width:26px;
+  height: auto;
 }
 
 @media (max-width: 576px) {
   /* line 4, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_service.scss */
   .service_part .single_service_part_iner {
-    padding: 35px 14px;
-    margin: 10px 0px;
+    margin:10px 0px;
   }
 }
 
@@ -4072,8 +4080,8 @@ ul {
 .service_part .single_service_part_iner h3 {
   font-weight: 300;
   margin-bottom: 26px;
-  font-size: 22px;
-  color: #202020;
+  font-size: 20px;
+  color: #090909;
   font-family: "Circular Std", sans-serif;
   -webkit-transition: .25s ease-in;
   transition: .25s ease-in;
@@ -4091,8 +4099,8 @@ ul {
 /* line 50, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_service.scss */
 .service_part .single_service_part_iner p {
   margin-top:1.2rem;
-  font-size: 15px;
-  color: #202020;
+  font-size: 14px;
+  color: #090909;
   line-height: 1.8;
   font-weight: 300;
   -webkit-transition: .25s;

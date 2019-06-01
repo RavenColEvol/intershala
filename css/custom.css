@@ -1,6 +1,4 @@
-.mtb{
-    margin:1.8rem 0;
-}
+
 .stove_part{
     height:70vh;
     position: relative;
@@ -15,10 +13,24 @@
 }
 .stove_part .container:after{
     content: '';
-    width:35%;
-    height:5px;
+    width:529px;
+    height:40px;
     position: absolute;
-    background: rgba(0,0,0,.5);
+    opacity: .4335;
+    background: #d8d8d8;
+    top:110%;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius:50%;
+    filter: blur(10px);
+}
+.stove_part .container:before{
+    content: '';
+    width:193px;
+    height:40px;
+    position: absolute;
+    opacity: .5;
+    background: #d8d8d8;
     top:110%;
     left:50%;
     transform:translateX(-50%);
@@ -122,6 +134,7 @@
     position: relative;
     margin-left:3rem;
 }
+
 .services_part .container-fluid i{
     font-size:100px;
     z-index:-3;
@@ -129,6 +142,20 @@
     color:#bb5656;
     opacity: .15;
     top: 0;left: 2%;
+}
+@media (max-width:720px)
+{
+    .services_part .container-fluid{
+        margin-left: 1rem;
+    }
+
+    .services_part .container-fluid h1{
+        font-size:2rem;
+    }
+    .services_part .container-fluid i{
+        font-size:80px;
+        left:5%;
+    }
 }
 
 /* Inquire part */
@@ -174,8 +201,17 @@
 }
 .carousel_item{
     padding:45px 30px;
-    margin:30px;
-    box-shadow: 0 0.5rem 1rem rgba(150, 147, 147, 0.20);
+    margin:10px;
+    box-shadow: -1px 13px 20px #f0f2f4 !important;
+}
+.client_info h3{
+    font-size:22px;
+}
+.client_info p{
+    font-size: 14px;
+}
+.owl-item{
+    margin:0 0 20px 0;
 }
 .owl-nav{
     margin-left:2rem;
@@ -193,6 +229,12 @@
     margin:0 10px;
     box-shadow: 0 .25rem 1rem #bb56568a;
     transition:.15s all;
+}
+@media (max-width:720px)
+{
+    .owl-nav{
+        margin-left: 0;
+    }
 }
 .owl-next span:hover{
    color:#bb5656;
