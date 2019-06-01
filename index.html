@@ -37,7 +37,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="./assets/icons8-fire_element.svg" alt="logo"> </a>
+                        <div class="navbar-brand" href="index.html"> <img src="./assets/icons8-fire_element.svg" alt="logo"> </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +81,7 @@
                             <h1>Bringing families <br/>
                                 together...since 1990</h1>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae corrupti eos incidunt laborum rem, labore ullam explicabo non nisi veritatis libero at? Illum quaerat sunt corrupti ipsum deserunt ea dignissimos</p>
-                            <a href="#" class="btn_1"> Show me more </a>
+                            <a href="#" class="btn_1" data-toggle="modal" data-target='#modal1'> Show me more </a>
                         </div>
                     </div>
                 </div>
@@ -97,6 +97,44 @@
         <div class="hero-app-7 custom-animation3"><img src="img/animate_icon/icon_2.png" alt=""></div>
         <div class="hero-app-8 custom-animation"><img src="img/animate_icon/icon_4.png" alt=""></div>
     </section>
+    <div id="modal1" class="modal animated fadeInDown">
+        <div class="row ">
+            <div class="col-lg-6 col-sm-10 centered" >
+                    <div class="modal-content background-primary custom-modal-1">
+                            <!-- Modal Header -->
+                        <div class="modal-header" >
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        
+                        <div class="modal-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                            <div class="form-inline">
+                                                    <label for="name">Name</label>
+                                                    <input type="text" class="form-control" id="name">
+                                            </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                            <div class="form-inline">
+                                                    <label for="subject">Subject</label>
+                                                    <input type="text" class="form-control" id="subject">
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="textarea">Message</label>
+                                    <textarea name="textarea" class="form-control" rows="5"></textarea>
+                                </div>
+                                
+
+                                <button type="submit" class="btn">Send</button>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
     <!-- banner part start-->
 
     <!-- cta part start-->
@@ -328,8 +366,33 @@
     <div class="inquire_part">
         <div class="container">
             <h2>The future of Stove is <span>Asilverse Stove</span></h2>
-            <a href="" class='c_button'>Inquire</a>
+            <a href="" class='c_button' data-toggle="modal" data-target="#custom-modal-2">Inquire</a>
         </div>
+        <div id="custom-modal-2" class="modal animated fadeInDown">
+                <div class="row ">
+                    <div class="col-lg-6 col-sm-10 centered" >
+                            <div class="modal-content background-white custom-modal-2">
+                                    <!-- Modal Header -->
+                                <div class="modal-header" >
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <div class="modal-body">
+                                        <img style='width:30px;height: auto;margin-left:1.2rem' src="./assets/Parts/Burner.svg" alt=""><span style='font-size:1rem;font-weight: medium;text-indent: 5px;'> Burner</span>
+                                        <div class="row justify-content-around">
+                                            <div class="col-md-3 background-grey"></div>
+                                            <div class="col-md-3 background-grey"></div>
+                                            <div class="col-md-3 background-grey"></div>
+                                        </div>
+                                        <p class="ml">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deserunt praesentium molestias, ipsa harum unde quasi! Quo quia inventore deleniti est, tempore, veniam ratione doloribus consectetur adipisci beatae sint necessitatibus.
+                                        </p>
+        
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
     </div>
     <!-- inquire_part end -->
 
