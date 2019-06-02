@@ -54,6 +54,12 @@
     height:720px;
     border-radius:none;
 }
+@media (max-width:720px)
+{
+    .box_part{
+        height:520px;
+    }
+}
 .box_part .container{
     background:#b85858;
     padding:100px;
@@ -89,7 +95,7 @@
 @media (max-width:720px)
 {
     .box_part .container .numbers{
-        width:400px;
+        width:300px;
     }
     .box_part .container .box_part_text p{
         width:90vw;

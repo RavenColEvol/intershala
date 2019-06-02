@@ -3130,6 +3130,9 @@ ul {
     width:95%;
     font-size:15px;
   }
+  .cta_part .cta_part_iner .cta_part_text h1{
+    line-height: 1.5rem;
+  }
 }
 
 /* line 25, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_cta_part.scss */
@@ -3142,7 +3145,6 @@ ul {
   /* line 25, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_cta_part.scss */
   .cta_part .cta_part_iner .cta_part_text h1 {
     font-size: 25px;
-    height:36px;
   }
 }
 
