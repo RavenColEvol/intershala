@@ -1313,24 +1313,7 @@ ul {
 /* Causes Area css
 ============================================================================================ */
 /* line 259, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_blog.scss */
-.causes_slider .owl-dots {
-  text-align: center;
-  margin-top: 80px;
-}
 
-/* line 263, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_blog.scss */
-.causes_slider .owl-dots .owl-dot {
-  height: 14px;
-  width: 14px;
-  background: #eeeeee;
-  display: inline-block;
-  margin-right: 7px;
-}
-
-/* line 270, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_blog.scss */
-.causes_slider .owl-dots .owl-dot:last-child {
-  margin-right: 0px;
-}
 
 /* line 281, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_blog.scss */
 .causes_item {

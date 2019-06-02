@@ -1,8 +1,10 @@
+
 $('.multiple').owlCarousel({
   rtl:true,
   loop:true,
   margin:10,
   nav:true,
+  dots:false,
   responsive:{
       0:{
           items:1
@@ -15,11 +17,12 @@ $('.multiple').owlCarousel({
       }
   }
 });
-$('.single').owlCarousel({
+var owl = $('.single').owlCarousel({
 
   dots:true,
   loop:true,
-  nav:true,
+  nav:false,
+  dotsContainer: '#carousel-custom-dots',
   responsive:{
       0:{
           items:1
@@ -31,4 +34,14 @@ $('.single').owlCarousel({
           items:1
       }
   }
+});
+
+$('.owl-dot').click(function () {
+    owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+});
+$('.owl-prev').click(function () {
+    owl.trigger('prev.owl.carousel', [300]);
+});
+$('.owl-next').click(function () {
+    owl.trigger('next.owl.carousel', [300]);
 });
