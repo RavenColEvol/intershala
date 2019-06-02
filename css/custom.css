@@ -51,12 +51,11 @@
 /* box_part */
 
 .box_part{
-    height:100vh;
+    height:720px;
     border-radius:none;
 }
 .box_part .container{
     background:#b85858;
-    height: 80%;
     padding:100px;
     border-radius:10px;
     text-align: center;
@@ -72,7 +71,7 @@
         border-radius:none;
     }
     .box_part .container .box_part_text{
-    width:100%;
+        width:100%;
     }
 }
 .box_part .container .box_part_text h1{
@@ -81,18 +80,18 @@
 .box_part .container .box_part_text p{
     color:white;
 }
-.box_part .container .box_part_text .numbers{
+.box_part .container .numbers{
     margin-top:55px;
     display:grid;
     grid-template-columns: repeat(4,1fr);
     justify-content: center;
 }
-.box_part .container .box_part_text .numbers li{
+.box_part .container .numbers li{
     display:inline-block;
     display: flex;
     justify-content: center;
 }
-.box_part .container .box_part_text .numbers li a{
+.box_part .container .numbers li a{
     display:block;
     color:white;
     font-weight: bold;
@@ -106,7 +105,7 @@
 }
 @media (max-width:726px)
 {
-    .box_part .container .box_part_text .numbers li a{
+    .box_part .container  .numbers li a{
         width:50px;
         height:50px;
         line-height: 50px;
@@ -116,17 +115,31 @@
         border-radius: 0 !important;
     }
 }
-.box_part .container .box_part_text .numbers li a:hover{
+.box_part .container .numbers li a:hover{
     background:rgba(256,256,256,1);
     box-shadow: 0 0.5rem 1rem rgba(256,256,256,.25);
     color:#202020 !important;
 }
 
-.box_part .container .box_part_text i{
+.box_part .container i{
     margin:25px;
     color:white;
     font-size:50px;
     text-shadow:0 0 5px rgba(256,256,256,.55);
+}
+.single .owl-prev span,.single .owl-next span {
+    text-align: center;
+    display:inline-block;
+    font-size:2.5rem;
+    width:31px;
+    height:31px;
+    line-height: 31px;
+    border-radius: 50%;
+    color:white;
+    background:rgba(256,256,256,.25);
+    margin:0 10px;
+    box-shadow: 0 .25rem 1rem #bb56568a;
+    transition:.15s all;
 }
 
 /* Services part */
@@ -143,6 +156,7 @@
     opacity: .15;
     top: 0;left: 2%;
 }
+
 @media (max-width:720px)
 {
     .services_part .container-fluid{
@@ -213,7 +227,7 @@
 .owl-item{
     margin:0 0 20px 0;
 }
-.owl-nav{
+.multiple .owl-nav{
     margin-left:2rem;
 }
 .owl-prev span,.owl-next span {
@@ -235,6 +249,9 @@
     .owl-nav{
         margin-left: 0;
     }
+}
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
 }
 .owl-next span:hover{
    color:#bb5656;
