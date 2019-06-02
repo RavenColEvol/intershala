@@ -86,6 +86,15 @@
     width:704px;
     margin:0 auto;
 }
+@media (max-width:720px)
+{
+    .box_part .container .numbers{
+        width:400px;
+    }
+    .box_part .container .box_part_text p{
+        width:90vw;
+    }
+}
 .box_part .container .numbers li{
     display:inline-block;
     display: flex;
@@ -127,7 +136,7 @@
     font-size:50px;
     text-shadow:0 0 5px rgba(256,256,256,.55);
 }
-.owl-prev,.owl-next{
+#custom-navigation .owl-prev,#custom-navigation .owl-next{
     text-align: center;
     display:inline-block;
     font-size:18px;
